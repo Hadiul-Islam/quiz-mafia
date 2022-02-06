@@ -1,10 +1,13 @@
 import React from 'react';
+import LayoutWithNav from '../Layouts/LayoutWithNav';
 import Videos from '../Videos';
-import Quiz from './Quiz';
-import Result from './Result';
 
 const Home = () => {
-    return <Result />
+    return (
+        <LayoutWithNav>
+            <Videos />
+        </LayoutWithNav>
+    )
 };
 
 export default Home;

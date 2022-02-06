@@ -4,10 +4,12 @@ import Form from '../Form';
 import Illustration from '../Illustration';
 import TextInput from '../TextInput';
 import classes from '../../styles/Login.module.css';
+import LayoutWithNav from '../Layouts/LayoutWithNav';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
-        <>
+        <LayoutWithNav>
             <h1>Login to your account</h1>
 
             <div className="column">
@@ -24,11 +26,11 @@ const Login = () => {
                     <Button>Submit Now</Button>
 
                     <div className="info">
-                        Don't have an account? <a href="signup.html">Signup</a> instead.
+                        Don't have an account? <Link to="/signup">Signup</Link> instead.
                     </div>
                 </Form>
             </div>
-        </>
+        </LayoutWithNav>
     );
 };
 

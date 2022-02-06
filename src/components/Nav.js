@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Accounts from './Accounts';
 import classes from '../styles/Nav.module.css';
 import logo from '../assets/logo-icon/logo.png';
@@ -9,10 +10,10 @@ const Nav = () => {
         <nav className={classes.nav}>
             <ul>
                 <li>
-                    <a href="index.html" className={classes.brand}>
+                    <Link to="/" className={classes.brand}>
                         <img src={logo} alt="Learn with Sumit Logo" />
                         <h3>Quiz Mafia</h3>
-                    </a>
+                    </Link>
                 </li>
             </ul>
             <Accounts />

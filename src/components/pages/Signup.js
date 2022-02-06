@@ -5,10 +5,12 @@ import Form from '../Form';
 import Illustration from '../Illustration';
 import TextInput from '../TextInput';
 import classes from '../../styles/SignUp.module.css';
+import { Link } from 'react-router-dom';
+import LayoutWithNav from '../Layouts/LayoutWithNav';
 
 const Signup = () => {
     return (
-        <>
+        <LayoutWithNav>
             <h1>Create an account</h1>
 
             <div className="column">
@@ -35,11 +37,11 @@ const Signup = () => {
                     <Button>Submit Now</Button>
 
                     <div className="info">
-                        Already have an account? <a href="login.html">Login</a> instead.
+                        Already have an account? <Link to="/login">Login</Link> instead.
                     </div>
                 </Form>
             </div>
-        </>
+        </LayoutWithNav>
     );
 };
 

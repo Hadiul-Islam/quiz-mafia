@@ -1,13 +1,21 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import '../styles/root.css';
-import LayoutWithNav from './Layouts/LayoutWithNav';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import Quiz from './pages/Quiz';
+import Result from './pages/Result';
 
 const App = () => {
   return (
-    <LayoutWithNav>
-      <Home />
-    </LayoutWithNav>
+    <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path="/signup" element={ <Signup /> } />
+        <Route path="/login" element={ <Login /> } />
+        <Route path="/quiz" element={ <Quiz /> } />
+        <Route path="/result" element={ <Result /> } />
+    </Routes>
   );
 };
 
