@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../pages/Home';
+import Home from './pages/Home';
 import '../styles/root.css';
 import LayoutWithNav from './Layouts/LayoutWithNav';
 
